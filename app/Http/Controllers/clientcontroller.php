@@ -3,11 +3,22 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Session;
 
 class clientcontroller extends Controller
 {
     public function index()
     {
-        return view('index');
+        $clientdata = Session::get('clientdata');
+        
+        return view('index',['clientdata'=>$clientdata]);
+    }
+
+    public function logout()
+    {
+        Session::forget('clientdata');
+        Session::flush();
+
+        return redirect('/');
     }
 }

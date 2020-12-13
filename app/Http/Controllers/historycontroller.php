@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Session;
 
 class historycontroller extends Controller
 {
@@ -10,8 +11,9 @@ class historycontroller extends Controller
     {
 
         // ambil data dari db
-
-        return view('history');
+        $clientdata = Session::get('clientdata');
+        
+        return view('history',['clientdata'=>$clientdata]);
     }
 
     public function changeCheck(Request $req)

@@ -27,7 +27,13 @@
                             {{ csrf_field() }}
                             <!-- <div><input type="text" placeholder="Name" id="name"></div> -->
                             <div><input type="email" name="email" placeholder="Email" id="email"></div>
-                            <div><input type="text" name="password" placeholder="Password" id="password"></div>
+                                @error ('email')
+                                    <div class="red_text">{{ $message }}</div>
+                                @enderror
+                            <div><input type="password" name="password" placeholder="Password" id="password"></div>
+                                @error ('password')
+                                    <div class="red_text">{{ $message }}</div>
+                                @enderror
                             <!-- <div><input type="text" placeholder="Confirm password" name="c-pass" id="C-pass"></div> -->
                             <!-- <div><input type="date" id="date"></div> -->
                             <!-- <div class="order-s">

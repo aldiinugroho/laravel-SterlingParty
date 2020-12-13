@@ -21,7 +21,7 @@
     </div> -->
 
 
-    <div class="header-cont">
+    {{-- <div class="header-cont">
         <div class="header">
             <div class="home-e"><a href="/index"><p>Home</p></a></div>
             <div class="history-e"><a href="/history"><p>History</p></a></div>
@@ -29,9 +29,10 @@
             <div class="need-e"><a href="/need"><p>Need something ?</p></a></div>
         </div>
         <div>
-            <div class="logout-conf"><a href="/"><p>Logout</p></a></div>
+            <div class="logout-conf"><a href="/logout"><p>Logout</p></a></div>
         </div>
-    </div>
+    </div> --}}
+    @include('header')
 
     <div class="overall">
         <!-- main -->
@@ -212,6 +213,7 @@
         <!-- end of main -->
     
     </div>
+
     <script src={{URL::asset('./js/order.js')}}></script>
 </body>
 </html>

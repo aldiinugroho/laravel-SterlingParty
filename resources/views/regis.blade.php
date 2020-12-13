@@ -26,9 +26,21 @@
                         <form class="order" action="/registerData" method="post">
                             {{ csrf_field() }}
                             <div><input type="text" name="name" placeholder="Name" id="name"></div>
+                                @error ('name')
+                                    <div class="red_text">{{ $message }}</div>
+                                @enderror
                             <div><input type="email" name="email" placeholder="Email" id="email"></div>
-                            <div><input type="text" name="password" placeholder="Password" id="password"></div>
-                            <div><input type="text" name="confrimpassword" placeholder="Confirm password" name="c-pass" id="C-pass"></div>
+                                @error ('email')
+                                    <div class="red_text">{{ $message }}</div>
+                                @enderror
+                            <div><input type="password" name="password" placeholder="Password" id="password"></div>
+                                @error ('password')
+                                    <div class="red_text">{{ $message }}</div>
+                                @enderror
+                            <div><input type="password" name="confrimpassword" placeholder="Confirm password" name="c-pass" id="C-pass"></div>
+                                @error ('confrimpassword')
+                                    <div class="red_text">{{ $message }}</div>
+                                @enderror
                             <!-- <div><input type="date" id="date"></div> -->
                             <!-- <div class="order-s">
                                 <select class="opt-font" id="theme">
@@ -46,6 +58,9 @@
                                 <div><input type="checkbox" name="acc" id="acc"></div>
                                 <div><p>Agree to terms and conditions</p></div>
                             </div>
+                                @error ('acc')
+                                    <div class="red_text">{{ $message }}</div>
+                                @enderror
 
                             <div class="error-conf" id="errors"></div>
                 

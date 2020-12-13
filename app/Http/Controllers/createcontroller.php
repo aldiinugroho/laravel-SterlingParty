@@ -3,12 +3,15 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Session;
 
 class createcontroller extends Controller
 {
     public function create()
     {
-        return view('create');
+        $clientdata = Session::get('clientdata');
+        
+        return view('create',['clientdata'=>$clientdata]);
     }
 
     public function registerevent(Request $req)

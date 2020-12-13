@@ -1,5 +1,18 @@
 /* main */
 
+.red_text{
+    color: red;
+    font-family: roboto;
+}
+
+.name_log_set{
+    display: flex;
+}
+
+.name_log_set>div{
+    margin-left: 1rem;
+}
+
 .overall{
     align-content: center;
     background-image: linear-gradient(rgba(166, 246, 250, 0.802), rgb(194, 236, 238), rgb(248, 224, 165));
@@ -904,6 +917,10 @@ select{
 }
 
 @media screen and (max-width: 660px){
+
+    .nameclient{
+        font-size: 0.7rem;
+    }
 
     .castle{
         margin-left: -0rem;

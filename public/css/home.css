@@ -34,8 +34,12 @@ a{
     color: black;
 }
 
-.home-c>a>p{
+/* .home-c>a>p{
     background-color: white;
+} */
+
+.home-c>a>p{
+    background-color: rgba(255, 167, 0, 1);
 }
 
 .history-c>a>p{

@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Middleware\checkClient;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,13 +20,15 @@ Route::get('/', 'landingpagecontroller@landingpage');
 
 
 // client page
-Route::get('/index', 'clientcontroller@index');
+Route::get('/index', 'clientcontroller@index')->middleware(checkClient::class);
+
+Route::get('/logout', 'clientcontroller@logout')->middleware(checkClient::class);
 
 
 // history page
-Route::get('/history', 'historycontroller@history');
+Route::get('/history', 'historycontroller@history')->middleware(checkClient::class);
 
-Route::post('/changeCheck', 'historycontroller@changeCheck');
+Route::post('/changeCheck', 'historycontroller@changeCheck')->middleware(checkClient::class);
 
 
 // login page
@@ -41,20 +44,20 @@ Route::post('/registerData', 'registercontroller@registerData');
 
 
 // create page
-Route::get('/create', 'createcontroller@create');
+Route::get('/create', 'createcontroller@create')->middleware(checkClient::class);
 
-Route::post('/registerevent', 'createcontroller@registerevent');
+Route::post('/registerevent', 'createcontroller@registerevent')->middleware(checkClient::class);
 
 
 // need page
-Route::get('/need', 'needcontroller@need');
+Route::get('/need', 'needcontroller@need')->middleware(checkClient::class);
 
 
 // change page
-Route::get('/change', 'changecontroller@change');
+Route::get('/change', 'changecontroller@change')->middleware(checkClient::class);
 
-Route::post('/changeRequest', 'changecontroller@changeRequest');
+Route::post('/changeRequest', 'changecontroller@changeRequest')->middleware(checkClient::class);
 
 
 // cart page
-Route::get('/cart', 'cartcontroller@cart');
+Route::get('/cart', 'cartcontroller@cart')->middleware(checkClient::class);
