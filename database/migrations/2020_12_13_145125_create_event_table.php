@@ -25,7 +25,7 @@ class CreateEventTable extends Migration
             ->references('PaymentType_ID')
             ->on('paymenttype');
             $table->string('Event_Name');
-            $table->integer('Event_Contact');
+            $table->string('Event_Contact');
             $table->string('Event_Address');
             $table->string('Event_Date');
             $table->string('Event_Additional');

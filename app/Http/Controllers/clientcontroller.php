@@ -17,6 +17,7 @@ class clientcontroller extends Controller
     public function logout()
     {
         Session::forget('clientdata');
+        Session::forget('zeromsg');
         Session::flush();
 
         return redirect('/');

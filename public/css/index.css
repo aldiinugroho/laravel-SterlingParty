@@ -1,5 +1,9 @@
 /* main */
 
+.tohideval{
+    display: none;
+}
+
 .red_text{
     color: red;
     font-family: roboto;

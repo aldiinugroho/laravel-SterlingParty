@@ -95,32 +95,28 @@
 
                     <div>
                         <div class="history-cont">
-                            <div class="event-scroll">
-                                <div>
-                                    <div class="event-history-conf"><p>Event History</p></div>
-                                    <div class="history-event-cont">
-                                    <div class="ticket-conf"><p>Ticket #20200001</p></div>
+                            @if ($historyevent->isEmpty())
+                                {{-- nothing to show --}}
+                            @else
+                                <div class="event-scroll">
+                                    
+                                    @foreach ($historyevent as $item)
                                         <div>
-                                            <p>testuser, 081228800088, (Hollywood, Los Angeles, CA, USA), 
-                                                Rock, no additional theme, 100 guest, debit.
-                                            </p>
+                                            <div class="event-history-conf"><p>Event History</p></div>
+                                            <div class="history-event-cont">
+                                                <div class="ticket-conf"><p>Ticket #{{$item->Event_ID}}</p></div>
+                                                <div>
+                                                    <p>{{$item->Event_Name}}, 0{{$item->Event_Contact}}, {{$item->Event_Address}}, 
+                                                        {{$item->Theme_Name}}, {{$item->Event_Additional}}, {{$item->Event_Guest}} guest.
+                                                    </p>
+                                                </div>
+                                                <div class="ticket-price-conf"><p>Rp {{$item->Event_Price}}</p></div>
+                                            </div>
                                         </div>
-                                        <div class="ticket-price-conf"><p>Rp 20.000.000</p></div>
-                                    </div>
+                                    @endforeach
                                 </div>
-                                <div>
-                                    <div class="event-history-conf"><p>Event History</p></div>
-                                    <div class="history-event-cont">
-                                    <div class="ticket-conf"><p>Ticket #20200001</p></div>
-                                        <div>
-                                            <p>testuser, 081228800088, (Hollywood, Los Angeles, CA, USA), 
-                                                Rock, no additional theme, 100 guest, debit.
-                                            </p>
-                                        </div>
-                                        <div class="ticket-price-conf"><p>Rp 20.000.000</p></div>
-                                    </div>
-                                </div>
-                            </div>
+                            @endif
+                            
 
                             <!-- item history -->
 
@@ -154,6 +150,10 @@
                                 <div class="ticket"><input type="text" name="ticket" placeholder="#Ticket number"></div>
                                 <div class="btn-ch"><button>Change</button></div>
                             </div>
+                                @error ('ticket')
+                                    <div class="red_text">{{ $message }}</div>
+                                @enderror
+                                <div class="red_text">{{$errormsg}}</div>
                         </form>
                     </div>
 

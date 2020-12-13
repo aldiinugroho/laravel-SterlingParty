@@ -24,7 +24,7 @@ class CreateEventchangedetailTable extends Migration
             ->references('Theme_ID')
             ->on('theme');
             $table->string('Eventchangedetail_Name');
-            $table->integer('Eventchangedetail_Contact');
+            $table->string('Eventchangedetail_Contact');
             $table->string('Eventchangedetail_Address');
             $table->string('Eventchangedetail_Date');
             $table->string('Eventchangedetail_Additional');

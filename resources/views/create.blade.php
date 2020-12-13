@@ -43,45 +43,76 @@
                         <form class="order" action="/registerevent" method="post">
                             {{ csrf_field() }}
                             <div><input type="text" name="name" placeholder="Name" id="name"></div>
+                                @error ('name')
+                                    <div class="red_text">{{ $message }}</div>
+                                @enderror
+
                             <div><input type="text" name="contact" placeholder="Contact" id="contact"></div>
+                                @error ('contact')
+                                    <div class="red_text">{{ $message }}</div>
+                                @enderror
+
                             <div><input type="text" name="address" placeholder="Address" id="address"></div>
+                                @error ('address')
+                                    <div class="red_text">{{ $message }}</div>
+                                @enderror
+
                             <div><input type="date" name="date" id="date"></div>
+                                @error ('date')
+                                    <div class="red_text">{{ $message }}</div>
+                                @enderror
+
                             <div class="order-s">
                                 <select class="opt-font" name="theme" id="theme">
-                                    <option selected value="null">Event theme</option>
-                                    <option value="Casual">Casual</option>
-                                    <option value="Halloween">Halloween</option>
-                                    <option value="Pool">Pool</option>
-                                    <option value="Rock">Rock</option>
-                                    <option value="Other">Other</option>
+                                    <option selected value="">Event theme</option>
+                                    @foreach ($theme as $i)
+                                        <option value={{$i->Theme_ID}}>{{$i->Theme_Name}}</option>
+                                    @endforeach
                                 </select>
                             </div>
+                                @error ('theme')
+                                    <div class="red_text">{{ $message }}</div>
+                                @enderror
+
                             <div><input type="text" name="additional" placeholder="Additional themes" id="additional"></div>
+                                @error ('additional')
+                                    <div class="red_text">{{ $message }}</div>
+                                @enderror
 
-
-                            <div><input name="numberguest" placeholder="The number of guests" type="number" name="count" id="count"></div>
+                            <div><input name="numberguest" onchange="calculateAmount(this.value)" placeholder="The number of guests" type="number" name="count" id="count"></div>
+                                @error ('numberguest')
+                                    <div class="red_text">{{ $message }}</div>
+                                @enderror
+                                
 
                             <div class="condi-conf">
                                 <p>*The total price you get will be based on the number of invited guests</p>
                             </div>
 
                             <div class="total-conf">
-                                <p>Rp -</p>
+                                <div>Rp</div>
+                                <div><input name="total_amount" id="total_amount" type="text" readonly></div>
                             </div>
 
                             <div class="order-s">
                                 <select name="paymentype" class="opt-font" id="theme">
-                                    <option selected value="null">Payment type</option>
-                                    <option value="Debit">Debit</option>
+                                    <option selected value="">Payment type</option>
+                                    @foreach ($paymenttype as $p)
+                                        <option value={{$p->PaymentType_ID}}>{{$p->PaymentType_Name}}</option>
+                                    @endforeach
                                 </select>
                             </div>
-
-
+                                @error ('paymentype')
+                                    <div class="red_text">{{ $message }}</div>
+                                @enderror
                 
                             <div class="acpt">
                                 <div><input type="checkbox" name="acc" id="acc"></div>
                                 <div><p>Agree to terms and conditions</p></div>
                             </div>
+                                @error ('acc')
+                                    <div class="red_text">{{ $message }}</div>
+                                @enderror
 
                             <div class="error-conf" id="errors"></div>
                 

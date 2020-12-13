@@ -79,3 +79,9 @@ function register() {
     
     return true;
 }
+
+function calculateAmount(val) {
+    var tot_price = val * 100000;
+    var divobj = document.getElementById('total_amount');
+    divobj.value = tot_price;
+}
