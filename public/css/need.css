@@ -11,12 +11,62 @@
     justify-content: center;
 }
 
+.err_itmmsg{
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.err_itmmsg>div{
+    padding: 1rem;
+}
+
+.noitemtosee>h2{
+    background-color: rgba(255, 198, 92, 0.678);
+    padding: 1rem;
+    z-index: 10;
+    position: relative;
+    border-radius: 5px;
+    font-family: roboto;
+}
+
+.forPaginate{
+    z-index: 5;
+    position: relative;
+    text-align: center;
+    font-family: roboto;
+    font-size: 0.8rem;
+}
+
+.pagination {
+    text-align: center;
+    margin-top: 0.5rem;
+    list-style: none;
+    margin-bottom: 2rem;
+  }
+
+.pagination li {
+    display: inline-block;
+    padding: 0.2rem;
+}
+
+.pagination a {
+    text-decoration: none;
+    padding: 0.2rem 0.4rem;
+    color:  black;
+    background-color:  rgba(241, 236, 225, 1);
+    border-radius: 2px;
+  }
+
 .item-sell-cont>div{
     padding: 1rem;
 }
 
 .amount-cont{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;

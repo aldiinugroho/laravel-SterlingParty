@@ -19,7 +19,6 @@ class historycontroller extends Controller
         ->join('theme','theme.Theme_ID','=','event.Theme_ID')
         ->where('User_ID','=',$clientdata[0]['User_ID'])
         ->get();
-        // dd($historyevent);
 
         return view('history',['clientdata'=>$clientdata,'errormsg'=>$errormsg,'historyevent'=>$historyevent]);
     }

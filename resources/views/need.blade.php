@@ -81,54 +81,48 @@
                             </div>
                         </form>
                     </div> -->
+                    @if (!$item->isEmpty())
+                        <div>
+                            <div class="item-sell-cont">
+                                @foreach ($item as $i)
+                                    <div>
+                                        <div class="detail-item-conf">
+                                            <div class="item-foto-cont">
+                                                <div><img src={{"data:image/".$i->Item_ImageType.";base64,".base64_encode( $i->Item_Image )}} alt={{$i->Item_Name}}></div>
+                                            </div>
 
-                    <div>
-                        <div class="item-sell-cont">
-                            <div>
-                                <div class="detail-item-conf">
-                                    <div class="item-foto-cont">
-                                        <div><img src="./Assets/main/pop.jpg" alt="popper"></div>
+                                            <div class="detail-conf-text">
+                                                <div><p>{{$i->Item_Name}}</p></div>
+                                                <div>Rp {{$i->Item_Price}}</div>
+                                                <div>
+                                                <form class="amount-cont" action="/addtocart/{{$i->Item_ID}}" method="post">
+                                                    {{ csrf_field() }}
+                                                    <div><p>Amount :</p></div>
+                                                    <div><input type="number" name="amount" id="amount"></div>
+                                                    <div><button>Add</button></div>
+                                                </form>
+                                            </div>
+                                            </div>
+                                        </div>
                                     </div>
-
-                                    <div class="detail-conf-text">
-                                        <div><p>Party popper</p></div>
-                                        <div>Rp 15.000</div>
-                                        <div>
-                                        <form class="amount-cont" action="" method="post">
-                                            <div><p>Amount :</p></div>
-                                            <div><input type="number" name="amount" id="amount"></div>
-                                            <div><button>Add</button></div>
-                                        </form>
-                                    </div>
-                                    </div>
+                                @endforeach
+                            </div>
+                            <div class="err_itmmsg">
+                                @error ('amount')
+                                    <div class="red_text">{{ $message }}</div>
+                                @enderror
+                            </div>
+                            <div class="forPaginate">
+                                <div class="pagination">
+                                    {{ $item->links() }}
                                 </div>
                             </div>
-
-                            <div>
-                                <div class="detail-item-conf">
-                                    <div class="item-foto-cont">
-                                        <div><img src="./Assets/main/glass.jpg" alt="glass"></div>
-                                    </div>
-                                    
-                                    <div class="detail-conf-text">
-                                        <div><p>Terrarium glass</p></div>
-                                        <div>Rp 350.000</div>
-                                        <div>
-                                        <form class="amount-cont" action="" method="post">
-                                            <div><p>Amount :</p></div>
-                                            <div><input type="number" name="amount" id="amount"></div>
-                                            <div><button>Add</button></div>
-                                        </form>
-                                    </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <!-- end item -->
-                            
                         </div>
-                    </div>
+                    @else
+                        <div class="noitemtosee"><h2>We have no item soryy..</h2></div>
+                    @endif
+                    
+                    
 
                     <div class="boat">
                         <div><img src="./Assets/main/boat.png" alt="boat"></div>

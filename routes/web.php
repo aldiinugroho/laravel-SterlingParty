@@ -61,3 +61,5 @@ Route::post('/changeRequest', 'changecontroller@changeRequest')->middleware(chec
 
 // cart page
 Route::get('/cart', 'cartcontroller@cart')->middleware(checkClient::class);
+
+Route::post('//addtocart/{Item_ID}', 'cartcontroller@countcart')->middleware(checkClient::class);
