@@ -1,0 +1,68 @@
+.bar-conf{
+    top: 0px;
+    position: sticky;
+    z-index: 10;
+}
+
+.menu-conf{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    background-color: rgba(120, 226, 207, 1);
+    padding: 0.5rem;
+    cursor: pointer;
+    justify-content: center;
+    font-family: banger;
+}
+
+.menu-conf>div{
+    align-self: center; 
+}
+
+.menu-conf1{
+    display: none;
+    width: 100%;
+    position: absolute;
+    justify-content: center;
+    text-align: center;
+}
+
+.contdrop{
+    /* width: inherit; */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: inherit;
+    font-family: banger;
+}
+
+
+.contdrop>a{
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0.5rem;
+    background-color: rgba(120, 226, 207, 1);
+    color: black;
+    text-decoration: none;
+    width: 100%;
+    /* transition: 0.4s ease-in-out; */
+}
+
+.contdrop>a:hover{
+    background-color: rgb(240, 191, 86);
+    transition: 0.9s ease-in-out;
+}
+
+
+.show {
+    display: none;
+    transition: 0.4s ease-in-out;
+}
+
+.mainbase{
+    /* height: 200rem; */
+    background-color: sandybrown;
+}

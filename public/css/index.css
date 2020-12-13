@@ -1,0 +1,2169 @@
+/* main */
+
+.overall{
+    align-content: center;
+    background-image: linear-gradient(rgba(166, 246, 250, 0.802), rgb(194, 236, 238), rgb(248, 224, 165));
+}
+
+.base{
+    height: 53.5em;
+    z-index: 0;
+    position: relative;
+}
+
+.slogan{
+    margin-left: -65rem;
+    margin-top: -5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.slogan-i{
+    margin-left: -65rem;
+    margin-top: -5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.bags{
+    top: 0px;
+    position: sticky;
+    z-index: 10;
+    padding: 1rem;
+    margin-top: -5rem;
+}
+
+.bag{
+    height: 1.4rem;
+    cursor: pointer;
+}
+
+.imgrz{
+    /* position: relative; */
+    height: 3rem;
+    margin: 15rem;
+    margin-top: 7rem;
+}
+
+.imgrz>div>img{
+    height: 3rem;
+    position: absolute;
+}
+    /* child of imgrz */
+    .getp{
+        position: absolute;
+        margin-top: 5rem;
+    }
+
+    .whatp{
+        position: absolute;
+        margin-left: 6rem;
+        margin-top: 3rem;
+    }
+
+    .youp{
+        position: absolute;
+        margin-left: 13rem;
+        margin-top: 1rem;
+    }
+
+    .wantp{
+        position: absolute;
+        margin-left: 19rem;
+    }
+    /* end of child */
+
+.logo-cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 12rem;
+    /* margin-bottom: 1.5rem; */
+}
+
+.logo-cont>div>img{
+    height: 8rem;
+}
+
+.ly1, .ly2, .ly3{
+    font-size: 0;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    justify-self: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.l2n3{
+    width: 100%;
+    height: auto;
+    position: relative;
+    align-items: flex-end;
+}
+
+.boat{
+    position: relative;
+    z-index: 1;
+    margin-right: -80rem;
+    margin-top: 22rem;
+}
+
+.castle{
+    position: absolute;
+    margin-left: -68rem;
+    margin-top: 25rem;
+    z-index: 1;
+}
+
+.castle>img{
+    width: 18rem;
+}
+
+.boat>div>img{
+    width: 3rem;
+    margin-right: 8rem;
+}
+
+.l2n3>div{
+    position: absolute;
+}
+
+.main-vec{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding-top: 7rem;
+}
+
+.main-vec>div{
+    position: absolute;
+}
+
+/* end of main */
+
+/* p1 */
+.base-p1{
+    background-color: #BEB8B8;
+    /* height: inherit; */
+    font-size: 0;
+    position: relative;
+}
+
+.cntr{
+    width: 100%;
+    height: auto;
+    position: relative;
+    /* align-items: flex-end; */
+    font-size: 0;
+}
+
+.ly4{
+    font-size: 0;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.halloween-cont{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+    padding-bottom: 14.5rem;
+    margin-bottom: 1rem;
+}
+
+
+.halloween>img{
+    width: 40rem;
+}
+
+.p1font{
+    font-family: halloween;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.p1font-1{
+    font-family: halloween;
+    font-weight: bold;
+    color: red;
+}
+
+.p1font-2{
+    font-family: halloween;
+    font-weight: bold;
+    color: #FFB800;
+}
+
+.p1font-cont{
+    width: 30rem;
+    height: auto;
+    align-self: center;
+    margin-left: 6rem;
+    margin-top: 3rem;
+}
+
+.hall-vec{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.hall-vec>div{
+    position: absolute;
+}
+
+.haunted-castle{
+    margin-top: 21.5rem;
+    margin-right: 80rem;
+    position: relative;
+    z-index: 0;
+}
+
+.haunted-castle>img{
+    width: 11.5rem;
+}
+
+.bat-cont{
+    display: flex;
+    justify-content: center;
+}
+
+.bat{
+    margin-left: 30rem;
+    margin-bottom: -5rem;
+    margin-top: -8rem;
+}
+
+.bat>img{
+    width: 20rem;
+    z-index: 2;
+    position: relative;
+}
+
+.ghost{
+    margin-top: 31.5rem;
+    margin-left: 70rem;
+}
+
+.ghost>img{
+    width: 10rem;
+    z-index: 2;
+    position: relative;
+}
+
+/* end of p1 */
+
+/* p2 */
+.base-p2{
+    font-size: 0;
+    position: relative;
+}
+
+.ly5{
+    font-size: 0;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin-top: -4rem;
+    position: absolute;
+}
+
+.casual>img{
+    width: 35rem;
+}
+
+.casual-cont{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+}
+
+.casual{
+    font-family: casual;
+    width: 30rem;
+    text-align: center;
+    align-self: center;
+    font-size: 1.2rem;
+}
+
+.lamp{
+    margin-top: -26rem;
+    margin-left: -76rem;
+}
+
+.lamp>img{
+    width: 18rem;
+}
+
+.clothes{
+    margin-top: -21rem;
+    margin-left: -62rem;
+}
+
+.clothes>img{
+    width: 14rem;
+}
+
+/* end of p2 */
+
+/* p3 */
+.base-p3{
+    background-color: #D7C641;
+    font-size: 0;
+    position: relative;
+    z-index: 2;
+}
+
+.cntr-p3{
+    margin-top: -6.7rem;
+}
+
+.ly6{
+    font-size: 0;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.vec{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: -4rem;
+}
+
+.vec>div{
+    position: absolute;
+}
+
+.planet{
+    margin-right: -65rem;
+    margin-top: -5rem;
+}
+
+.rock-cont{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 6.5rem;
+}
+
+.rock-font{
+    font-family: rock;
+    text-align: center;
+    font-size: 1.2rem;
+    width: 30rem;
+    line-height: 1.8rem;
+    align-self: center;
+}
+
+.rock>img{
+    width: 35rem;
+}
+
+.p3-font1{
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    padding-right: 0.5rem;
+    padding-left: 0.2rem;
+}
+
+.p3-font2{
+    background-color: white;
+    font-weight: bold;
+    padding-left: 0.2rem;
+    padding-bottom: 0.4rem;
+}
+
+.p3-font3{
+    font-weight: bold;
+    color: red;
+}
+
+.planet-cont{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -11rem;
+    margin-right: 2rem;
+}
+
+.planet>img{
+    width: 9rem;
+}
+
+.alien{
+    margin-top: -27rem;
+    margin-right: -75rem;
+}
+
+.alien>img{
+    width: 15rem;
+    margin-bottom: -12rem;
+    z-index: 2;
+    position: relative;
+}
+
+.alien-cont{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -7rem;
+
+}
+
+/* end of p3 */
+
+/* p4 */
+.base-p4{
+    background-color: #F0EEE6;
+    font-size: 0;
+    position: relative;
+}
+
+/* .cntr-p4{
+} */
+
+.ly7{
+    font-size: 0;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.sun>img{
+    width: 16rem;
+}
+
+.sun{
+    margin-left: -30rem;
+    margin-top: -10.5rem;
+    text-align: center;
+}
+
+.p4-font{
+    font-size: 4.5rem;
+    font-weight: bold;
+    font-family: pool;
+    text-align: center;
+    /* margin-top: -5rem; */
+}
+
+.p4-p{
+    color: red;
+}
+
+.p4-o{
+    color: #FF6B00;
+}
+
+.p4-o2{
+    color: #FF7A00;
+}
+
+.p4-l{
+    color: #FFF500;
+}
+
+
+.p4-font2{
+    font-family: pool;
+    width: 40rem;
+    text-align: center;
+    border-style: solid;
+    border-color: #FF8400;
+    background-color: white;
+    font-size: 1.2rem;
+    color: #75CDC8;
+    padding: 0.3rem;
+    border-radius: 10px;
+    /* margin-bottom: -2rem; */
+}
+
+.p4-conf{
+    font-family: pool;
+    width: 40rem;
+    text-align: center;
+    border-style: solid;
+    border-color: #FF8400;
+    background-color: rgba(255, 122, 0, 0.29);
+    font-size: 1.2rem;
+    color: #75CDC8;
+    padding: 0.3rem;
+    border-radius: 10px;
+    margin-left: -2rem;
+    height: 3.5rem;
+    margin-top: 2rem;
+}
+
+.sun-theme{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 1.3rem;
+    margin-bottom: 20rem;
+}
+
+.sun-theme>div{
+    position: absolute;
+}
+
+.footer{
+    position: relative;
+}
+
+.footer>div{
+    position: absolute;
+}
+
+.lys-b, .lys-a{
+    font-size: 0;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    font-size: 0;
+}
+
+.lys-b{
+    z-index: 3;
+    position: relative;
+}
+
+.lys-a{
+    z-index: 1;
+    position: relative;
+}
+
+.lys-b{
+    z-index: 2;
+    margin-top: -6rem;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* margin-top: -5rem; */
+    /* margin-bottom: -2rem; */
+    font-family: pool;
+    /* position: relative; */
+}
+
+.footer>div{
+    font-size: 1rem;
+    background-color: rgb(255, 134, 139);
+    position: relative;
+}
+
+.footer-1{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 3rem;
+    justify-content: center;
+}
+
+.footer-1>div, .link{
+    color: black;
+    text-decoration: none;
+    background-color: rgb(236, 200, 200);
+    padding: 0.1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0.3rem;
+    font-size: 1rem;
+    border-radius: 10px;
+    width: min-content;
+    
+}
+
+.flamingo>img{
+    width: 28rem;
+    position: relative;
+    z-index: 0;
+    margin-top: 7.220rem;
+    margin-left: -47rem;
+}
+
+.watermelon>img{
+    width: 20rem;
+    position: relative;
+    z-index: 2;
+    margin-top: 20.3rem;
+    margin-left: 45rem;
+}
+
+.cs-bg{
+    background-color: white;
+    margin-top: -1rem;
+    position: relative;
+    z-index: 1;
+    padding-bottom: 10rem;
+}
+
+.ball>img{
+    margin-top: 14rem;
+    margin-left: 65rem;
+    position: relative;
+    width: 25rem;
+}
+
+/* end of p4 */
+
+/* order page */
+
+.error-conf{
+    color: red;
+    font-family: rock;
+    font-size: 0.7rem;
+}
+
+.back-reg{
+    background-color: rgba(232, 198, 150, 1);
+    position: relative;
+    z-index: 0;
+}
+
+input:focus, select:focus{
+    outline: none;
+}
+
+ui-select{width: inherit}
+select::-ms-expand {display: none;}
+select{
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.order{
+    padding: 2rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 18rem;
+    background-color: rgba(120, 226, 207, 0.73);
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    margin-left: 57rem;
+    margin-top: 2rem;
+    z-index: 10;
+}
+
+.order-s>select{
+    color: black;
+    background-color: rgba(237, 239, 150, 1);
+    border: none;
+    width: 16rem;
+    height: 1.4rem;
+    border-radius: 5px;
+    padding-left: 0.8rem;
+    font-weight: bold;
+    font-family: roboto;
+    margin: 0.4rem;
+    font-size: 0.7rem;
+}
+
+.order>div>input{
+    color: black;
+    background-color: rgba(237, 239, 150, 1);
+    border: none;
+    width: 15rem;
+    height: 1.4rem;
+    border-radius: 5px;
+    padding-left: 1rem;
+    font-weight: bold;
+    font-family: roboto;
+    margin: 0.4rem;
+    font-size: 0.7rem;
+}
+
+.acpt{
+    display: flex;
+    flex-direction: row;
+    font-family: roboto;
+    font-size: 0.85rem;
+    align-self: center;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    font-weight: bold;
+}
+
+.acpt>div{
+    padding: 0.3rem;
+}
+
+.btn-order{
+    text-align: center;
+    padding-top: 0.7rem;
+    padding: -0.96rem;
+}
+
+.btn-order>button{
+    border: none;
+    cursor: pointer;
+    background-color:rgba(255, 172, 48, 1);
+    font-size: 1rem;
+    font-family: roboto;
+    border-radius: 5px;
+    color: black;
+    width: 6rem;
+    height: 1.5rem;
+    outline: none;
+    font-weight: bold;
+}
+
+.btn-login-s{
+    text-align: center;
+    padding-top: 0.7rem;
+    padding: -0.96rem;
+}
+
+.btn-login-s>button{
+    border: none;
+    cursor: pointer;
+    background-color:rgba(183, 183, 183, 1);
+    font-size: 1rem;
+    font-family: roboto;
+    border-radius: 5px;
+    color: black;
+    width: 4rem;
+    height: 1.5rem;
+    outline: none;
+    font-weight: bold;
+}
+
+.btn-login{
+    text-align: center;
+    padding-top: 1rem;
+    /* margin-bottom: -0.96rem; */
+}
+
+.btn-login>a{
+    border: none;
+    cursor: pointer;
+    background-color:rgba(183, 183, 183, 1);
+    font-size: 1rem;
+    font-family: roboto;
+    border-radius: 5px;
+    color: black;
+    /* width: 6rem; */
+    /* height: 5rem; */
+    /* outline: none; */
+    font-weight: bold;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    text-decoration: none;
+}
+
+.change-p{
+    margin-bottom: -50rem;
+    position: relative;
+    margin-top: 45rem;
+    margin-left: -45rem;
+    z-index: 1;
+    font-family: roboto;
+}
+
+.inp-btn{
+    display: flex;
+    flex-direction: row;
+}
+
+.ticket>input{
+    color: black;
+    background-color: rgba(207, 158, 89, 1);
+    border: none;
+    width: 15rem;
+    height: 1.5rem;
+    border-radius: 5px;
+    padding-left: 1rem;
+    font-weight: bold;
+    font-family: roboto;
+    /* margin: 0.4rem; */
+    font-size: 0.7rem;
+}
+
+.btn-ch>button{
+    border: none;
+    cursor: pointer;
+    background-color:white;
+    font-size: 0.7rem;
+    font-family: roboto;
+    border-radius: 5px;
+    color: black;
+    width: 6rem;
+    height: 1.5rem;
+    outline: none;
+    font-weight: bold;
+    margin-left: 1rem;
+}
+
+.change-info{
+    width: 33rem;
+    font-size: 1rem;
+    padding-bottom: 0.4rem;
+}
+
+/* end of order page */
+
+
+
+/* font face */
+
+@font-face{
+    font-family: halloween;
+    src: url(../Assets/p1/spectral.light.ttf);
+}
+
+@font-face{
+    font-family: casual;
+    src: url(../Assets/p2/abhaya-libre.regular.ttf);
+}
+
+@font-face{
+    font-family: rock;
+    src: url(../Assets/p3/anonymous-pro.regular.ttf);
+}
+
+@font-face{
+    font-family: pool;
+    src: url(../Assets/p4/BalooTamma-Regular.ttf);
+}
+
+@font-face{
+    font-family: roboto;
+    src: url(../Assets/main/roboto.light.ttf);
+}
+
+@font-face{
+    font-family: banger;
+    src: url(../Assets/main/bangers.regular.ttf);
+}
+/* end of font face */
+
+
+/* order size */
+@media screen and (max-width: 1470px){
+
+    .castle{
+        margin-left: -38rem;
+    }
+
+    .change-p{
+        margin-left: -25rem;
+    }
+
+    .order{
+        margin-left: 47rem;
+        margin-top: 2rem;
+    }
+
+    .boat{
+        margin-right: -40rem;
+        margin-top: 22rem;
+    }
+
+}
+
+@media screen and (max-width: 1160px){
+
+    .castle{
+        margin-left: -0rem;
+    }
+
+    .change-p{
+        margin-left: 0rem;
+    }
+
+    .order{
+        margin-left: 0rem;
+        margin-top: 2rem;
+    }
+
+    .boat{
+        margin-right: -30rem;
+        margin-top: 22rem;
+    }
+
+    .slogan{
+        display: none;
+    }
+
+    .bag{
+        height: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 660px){
+
+    .castle{
+        margin-left: -0rem;
+    }
+
+    .change-p{
+        margin-left: 0rem;
+    }
+
+    .boat{
+        margin-right: -2rem;
+        margin-top: 20rem;
+    }
+
+    .slogan{
+        display: none;
+    }
+    .bag{
+        height: 1rem;
+    }
+
+    /* change */
+    .ticket>input{
+        width: 10rem;
+        font-size: 0.6rem;
+    }
+    
+    .btn-ch>button{
+        font-size: 0.6rem;
+        width: 4rem;
+        margin-left: 1rem;
+    }
+    
+    .change-info{
+        width: 20rem;
+        font-size: 0.7rem;
+        padding-bottom: 0.4rem;
+    }
+    /* end of change */
+
+    /* order page */
+    .order{
+        width: 12.5rem;
+        border-radius: 10px;
+        margin-left: 0rem;
+        margin-top: 2rem;
+    }
+    
+    .order-s>select{
+        width: 12rem;
+        height: 1.3rem;
+        padding-left: 0.8rem;
+        margin: 0.4rem;
+        font-size: 0.6rem;
+    }
+    
+    .order>div>input{
+        width: 11rem;
+        height: 1.3rem;
+        border-radius: 5px;
+        padding-left: 1rem;
+        margin: 0.4rem;
+        font-size: 0.6rem;
+    }
+    
+    .acpt{
+        font-size: 0.75rem;
+    }
+    
+    .acpt>div{
+        padding: 0.2rem;
+    }
+    
+    .btn-order{
+        text-align: center;
+        padding-top: 0.7rem;
+        padding-bottom: -0.96rem;
+    }
+    
+    .btn-order>button{
+        font-size: 0.8rem;
+        width: 5rem;
+        height: 1.4rem;
+    }
+
+    .btn-login-s{
+        text-align: center;
+        padding-top: 0.7rem;
+        padding-bottom: -0.96rem;
+    }
+    
+    .btn-login-s>button{
+        font-size: 0.8rem;
+        width: 3.5rem;
+        height: 1.4rem;
+    }
+
+    .btn-login{
+        text-align: center;
+        padding-top: 1rem;
+        padding: -0.96rem;
+    }
+    
+    .btn-login>a{
+        font-size: 0.8rem;
+        width: 3.3rem;
+        height: 1.4rem;
+    }
+    /* end of order page */
+
+}
+
+/* end of order size */
+
+/* index */
+@media screen and (max-width: 1445px) {
+    .ghost{
+        margin-top: 31.5rem;
+        margin-left: 55rem;
+    }
+
+    .flamingo>img{
+        width: 26rem;
+        margin-top: 8.820rem;
+        margin-left: -35rem;
+    }
+
+    .haunted-castle{
+        margin-top: 21.5rem;
+        margin-right: 60rem;
+    }
+
+    .alien{
+        margin-top: -27rem;
+        margin-right: -65rem;
+    }
+
+    .ball>img{
+        margin-top: 14rem;
+        margin-left: 55rem;
+        width: 22rem;
+    }
+}
+
+@media screen and (max-width: 1290px) {
+
+    /* slogan */
+    .getp{
+        position: absolute;
+        margin-top: 5rem;
+        margin-left: 10rem;
+    }
+
+    .whatp{
+        position: absolute;
+        margin-left: 16rem;
+        margin-top: 3rem;
+    }
+
+    .youp{
+        position: absolute;
+        margin-left: 23rem;
+        margin-top: 1rem;
+    }
+
+    .wantp{
+        position: absolute;
+        margin-left: 29rem;
+    }
+    /* end of slogan */
+
+    .ghost{
+        margin-top: 31.5rem;
+        margin-left: 55rem;
+    }
+
+    .flamingo>img{
+        width: 26rem;
+        margin-top: 8.820rem;
+        margin-left: -35rem;
+    }
+
+    .haunted-castle{
+        margin-top: 21.5rem;
+        margin-right: 60rem;
+    }
+
+    .alien{
+        margin-top: -27rem;
+        margin-right: -55rem;
+    }
+
+    .ball>img{
+        margin-top: 18rem;
+        margin-left: 35rem;
+        width: 13rem;
+    }
+
+    .casual>img{
+        width: 30rem;
+    }
+
+    .lamp{
+        margin-top: -22rem;
+        margin-left: -56rem;
+    }
+
+    .clothes{
+        margin-top: -18rem;
+        margin-left: -41rem;
+    }
+
+    .planet{
+        margin-right: -55rem;
+        margin-top: -5rem;
+    }
+
+
+}
+
+@media screen and (max-width: 1215px){
+    .ghost{
+        margin-top: 42.8rem;
+        margin-left: 49rem;
+    }
+
+    .haunted-castle{
+        margin-top: 31.5rem;
+        margin-right: 42rem;
+    }
+}
+
+@media screen and (max-width: 1120px) {
+
+    /* slogan */
+    .getp{
+        position: absolute;
+        margin-top: 5rem;
+        margin-left: 10rem;
+    }
+
+    .whatp{
+        position: absolute;
+        margin-left: 16rem;
+        margin-top: 3rem;
+    }
+
+    .youp{
+        position: absolute;
+        margin-left: 23rem;
+        margin-top: 1rem;
+    }
+
+    .wantp{
+        position: absolute;
+        margin-left: 29rem;
+    }
+    /* end of slogan */
+
+    .ghost{
+        margin-top: 39.9rem;
+        margin-left: 49rem;
+    }
+
+    .flamingo>img{
+        width: 23rem;
+        margin-top: 10.820rem;
+        margin-left: -25rem;
+    }
+
+    .haunted-castle{
+        margin-top: 28.5rem;
+        margin-right: 42rem;
+    }
+
+    .alien{
+        margin-top: -27rem;
+        margin-right: -45rem;
+    }
+
+    .ball>img{
+        margin-top: 18rem;
+        margin-left: 35rem;
+        width: 13rem;
+    }
+
+    .casual>img{
+        width: 28rem;
+    }
+
+    .lamp{
+        margin-top: -22rem;
+        margin-left: -56rem;
+    }
+
+    .clothes{
+        margin-top: -18rem;
+        margin-left: -41rem;
+    }
+
+    .planet{
+        margin-right: -55rem;
+        margin-top: -5rem;
+    }
+
+    .halloween>img{
+        width: 35rem;
+    }
+
+    .rock>img{
+        width: 32rem;
+    }
+
+    .watermelon>img{
+        margin-top: 20.3rem;
+        margin-left: 35rem;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+
+    /* slogan */
+    .getp{
+        position: absolute;
+        margin-top: 5rem;
+        margin-left: 10rem;
+    }
+
+    .whatp{
+        position: absolute;
+        margin-left: 16rem;
+        margin-top: 3rem;
+    }
+
+    .youp{
+        position: absolute;
+        margin-left: 23rem;
+        margin-top: 1rem;
+    }
+
+    .wantp{
+        position: absolute;
+        margin-left: 29rem;
+    }
+    /* end of slogan */
+
+    .ghost{
+        margin-top: 39.9rem;
+        margin-left: 38rem;
+    }
+
+    .flamingo>img{
+        width: 23rem;
+        margin-top: 10.820rem;
+        margin-left: -25rem;
+    }
+
+    .haunted-castle{
+        margin-top: 28.5rem;
+        margin-right: 42rem;
+    }
+
+    .alien{
+        margin-top: -26rem;
+        margin-right: -35rem;
+    }
+
+    .ball>img{
+        margin-top: 18rem;
+        margin-left: 35rem;
+        width: 13rem;
+    }
+
+    .casual>img{
+        width: 28rem;
+    }
+
+    .lamp{
+        margin-top: -22rem;
+        margin-left: -56rem;
+    }
+
+    .clothes{
+        margin-top: -18rem;
+        margin-left: -41rem;
+    }
+
+    .planet{
+        margin-right: -43rem;
+        margin-top: -5rem;
+    }
+
+    .halloween>img{
+        width: 35rem;
+    }
+
+    .rock>img{
+        width: 30rem;
+    }
+
+    .watermelon>img{
+        margin-top: 21.8rem;
+        margin-left: 28rem;
+    }
+
+}
+
+@media screen and (max-width: 850px) {
+
+    /* slogan */
+    .getp{
+        position: absolute;
+        margin-top: 5rem;
+        margin-left: 10rem;
+    }
+
+    .whatp{
+        position: absolute;
+        margin-left: 16rem;
+        margin-top: 3rem;
+    }
+
+    .youp{
+        position: absolute;
+        margin-left: 23rem;
+        margin-top: 1rem;
+    }
+
+    .wantp{
+        position: absolute;
+        margin-left: 29rem;
+    }
+    /* end of slogan */
+
+    .ghost{
+        margin-top: 39.9rem;
+        margin-left: 38rem;
+    }
+
+    .flamingo>img{
+        width: 23rem;
+        margin-top: 10.820rem;
+        margin-left: -25rem;
+    }
+
+    .haunted-castle{
+        margin-top: 28.5rem;
+        margin-right: 42rem;
+    }
+
+    .alien{
+        margin-top: -26rem;
+        margin-right: -35rem;
+    }
+
+    .ball>img{
+        margin-top: 18rem;
+        margin-left: 35rem;
+        width: 13rem;
+    }
+
+    .casual>img{
+        width: 28rem;
+    }
+
+    .lamp{
+        margin-top: -22rem;
+        margin-left: -56rem;
+    }
+
+    .clothes{
+        margin-top: -18rem;
+        margin-left: -41rem;
+    }
+
+    .planet{
+        margin-right: -43rem;
+        margin-top: -5rem;
+    }
+
+    .halloween>img{
+        width: 35rem;
+    }
+
+    .rock>img{
+        width: 30rem;
+    }
+
+    .watermelon>img{
+        margin-top: 21.8rem;
+        margin-left: 28rem;
+    }
+
+}
+
+@media screen and (max-width: 833px) {
+
+    .imgrz>div>img{
+        height: 2rem;
+    }
+
+    /* slogan */
+    .getp{
+        position: absolute;
+        margin-top: 5rem;
+        margin-left: 19rem;
+    }
+
+    .whatp{
+        position: absolute;
+        margin-left: 23rem;
+        margin-top: 3.4rem;
+    }
+
+    .youp{
+        position: absolute;
+        margin-left: 27.8rem;
+        margin-top: 2.3rem;
+    }
+
+    .wantp{
+        position: absolute;
+        margin-left: 32rem;
+        margin-top: 1.2rem;
+    }
+    /* end of slogan */
+
+    .ghost{
+        margin-top: 39.9rem;
+        margin-left: 28rem;
+    }
+
+    .flamingo>img{
+        width: 23rem;
+        margin-top: 10.820rem;
+        margin-left: -25rem;
+    }
+
+    .haunted-castle{
+        margin-top: 28.5rem;
+        margin-right: 42rem;
+    }
+
+    .alien{
+        margin-top: -24rem;
+        margin-right: -30rem;
+    }
+
+    .ball>img{
+        margin-top: 21rem;
+        margin-left: 25rem;
+        width: 10rem;
+    }
+
+    .casual>img{
+        width: 28rem;
+    }
+
+    .lamp{
+        margin-top: -22rem;
+        margin-left: -56rem;
+    }
+
+    .clothes{
+        margin-top: -18rem;
+        margin-left: -41rem;
+    }
+
+    .planet{
+        margin-right: -29rem;
+        margin-top: -5rem;
+    }
+
+    .halloween>img{
+        width: 35rem;
+    }
+
+    .rock>img{
+        width: 30rem;
+    }
+
+    .watermelon>img{
+        margin-top: 23.2rem;
+        margin-left: 18rem;
+        width: 14rem;
+    }
+
+    .bat{
+        margin-left: 16rem;
+        margin-bottom: -5rem;
+        margin-top: -11rem;
+    }
+
+    .p4-font2{
+        font-family: pool;
+        width: 30rem;
+        text-align: center;
+        border-style: solid;
+        border-color: #FF8400;
+        background-color: white;
+        font-size: 1rem;
+        color: #75CDC8;
+        padding: 0.3rem;
+        border-radius: 10px;
+    }
+    
+    .p4-conf{
+        font-family: pool;
+        width: 30rem;
+        text-align: center;
+        border-style: solid;
+        border-color: #FF8400;
+        background-color: rgba(255, 122, 0, 0.29);
+        font-size: 1rem;
+        color: #75CDC8;
+        padding: 0.3rem;
+        border-radius: 10px;
+        margin-left: -2rem;
+        height: 5.2rem;
+        margin-top: 1.3rem;
+    }
+
+    .footer>div{
+        font-size: 0.7rem;
+        background-color: rgb(255, 134, 139);
+        position: relative;
+    }
+
+    .footer-1>div, .link{
+        background-color: rgb(236, 200, 200);
+        padding: 0.1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin: 0.3rem;
+        font-size: 0.7rem;
+        border-radius: 6px;
+        width: min-content;
+        
+    }
+
+    .p1font{
+        font-family: halloween;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .casual{
+        font-family: casual;
+        width: 30rem;
+        text-align: center;
+        align-self: center;
+        font-size: 1rem;
+    }
+
+    .rock-font{
+        font-family: rock;
+        text-align: center;
+        font-size: 1rem;
+        width: 30rem;
+        line-height: 1.8rem;
+        align-self: center;
+    }
+
+}
+
+@media screen and (max-width: 722px) {
+
+    .imgrz>div>img{
+        height: 2rem;
+    }
+
+    /* slogan */
+    .getp{
+        position: absolute;
+        margin-top: 5rem;
+        margin-left: 19rem;
+    }
+
+    .whatp{
+        position: absolute;
+        margin-left: 23rem;
+        margin-top: 3.4rem;
+    }
+
+    .youp{
+        position: absolute;
+        margin-left: 27.8rem;
+        margin-top: 2.3rem;
+    }
+
+    .wantp{
+        position: absolute;
+        margin-left: 32rem;
+        margin-top: 1.2rem;
+    }
+    /* end of slogan */
+
+    .ghost{
+        margin-top: 37rem;
+        margin-left: 16rem;
+    }
+
+    .flamingo>img{
+        width: 23rem;
+        margin-top: 10.820rem;
+        margin-left: -25rem;
+    }
+
+    .haunted-castle{
+        margin-top: 28.5rem;
+        margin-right: 22rem;
+    }
+
+    .alien{
+        margin-top: -24rem;
+        margin-right: -19rem;
+    }
+
+    .alien>img{
+        width: 12rem;
+        margin-bottom: -12rem;
+        z-index: 2;
+        position: relative;
+    }
+
+    .ball>img{
+        margin-top: 21rem;
+        margin-left: 20rem;
+        width: 10rem;
+    }
+
+    .casual>img{
+        width: 25rem;
+    }
+
+    .lamp{
+        margin-top: -22rem;
+        margin-left: -56rem;
+    }
+
+    .clothes{
+        margin-top: -18rem;
+        margin-left: -41rem;
+    }
+
+    .planet{
+        margin-right: -18rem;
+        margin-top: -5rem;
+    }
+
+    .halloween>img{
+        width: 28rem;
+    }
+
+    .rock>img{
+        width: 25rem;
+    }
+
+    .watermelon>img{
+        margin-top: 23.2rem;
+        margin-left: 14rem;
+        width: 14rem;
+    }
+
+    .bat>img{
+        width: 18rem;
+        z-index: 2;
+        position: relative;
+    }
+
+    .bat{
+        margin-left: 14rem;
+        margin-bottom: -5rem;
+        margin-top: -11rem;
+    }
+
+    .p4-font2{
+        font-family: pool;
+        width: 22rem;
+        text-align: center;
+        border-style: solid;
+        border-color: #FF8400;
+        background-color: white;
+        font-size: 1rem;
+        color: #75CDC8;
+        padding: 0.3rem;
+        border-radius: 10px;
+    }
+    
+    .p4-conf{
+        font-family: pool;
+        width: 22rem;
+        text-align: center;
+        border-style: solid;
+        border-color: #FF8400;
+        background-color: rgba(255, 122, 0, 0.29);
+        font-size: 1rem;
+        color: #75CDC8;
+        padding: 0.3rem;
+        border-radius: 10px;
+        margin-left: -2rem;
+        height: 7rem;
+        margin-top: 1.3rem;
+    }
+
+    .footer>div{
+        font-size: 0.7rem;
+        background-color: rgb(255, 134, 139);
+        position: relative;
+    }
+
+    .footer-1>div, .link{
+        background-color: rgb(236, 200, 200);
+        padding: 0.1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin: 0.3rem;
+        font-size: 0.7rem;
+        border-radius: 6px;
+        width: min-content;
+        
+    }
+
+    .p1font{
+        font-family: halloween;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .p1font-cont{
+        width: 22rem;
+        text-align: center;
+        font-size: 1rem;
+        margin-left: 0;
+    }
+
+    .casual-cont{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .casual{
+        font-family: casual;
+        width: 22rem;
+        text-align: center;
+        align-self: center;
+        font-size: 1rem;
+    }
+
+    .rock-font{
+        font-family: rock;
+        text-align: center;
+        font-size: 1rem;
+        width: 22rem;
+        line-height: 1.8rem;
+        align-self: center;
+    }
+}
+
+@media screen and (max-width: 530px) {
+
+    .imgrz>div>img{
+        height: 1.5rem;
+    }
+
+    /* slogan */
+    .getp{
+        position: absolute;
+        margin-top: 5rem;
+        margin-left: 24rem;
+    }
+
+    .whatp{
+        position: absolute;
+        margin-left: 27rem;
+        margin-top: 3.7rem;
+    }
+
+    .youp{
+        position: absolute;
+        margin-left: 30.6rem;
+        margin-top: 2.7rem;
+    }
+
+    .wantp{
+        position: absolute;
+        margin-left: 33.7rem;
+        margin-top: 1.7rem;
+    }
+    /* end of slogan */
+
+    .ghost>img{
+        width: 7.5rem;
+        z-index: 2;
+        position: relative;
+    }
+
+    .ghost{
+        margin-top: 29.4rem;
+        margin-left: 9.4rem;
+    }    
+
+    .flamingo>img{
+        width: 23rem;
+        margin-top: 10.820rem;
+        margin-left: -25rem;
+    }
+
+    .haunted-castle{
+        margin-top: 28.5rem;
+        margin-right: 42rem;
+    }
+
+    .alien{
+        margin-top: -23rem;
+        margin-right: -19rem;
+    }
+
+    .alien>img{
+        width: 10rem;
+        margin-bottom: -12rem;
+        z-index: 2;
+        position: relative;
+    }
+
+    .ball>img{
+        margin-top: 21rem;
+        margin-left: 20rem;
+        width: 10rem;
+    }
+
+    .casual>img{
+        width: 18rem;
+    }
+
+    .lamp{
+        margin-top: -22rem;
+        margin-left: -56rem;
+    }
+
+    .clothes{
+        margin-top: -18rem;
+        margin-left: -41rem;
+    }
+
+    .planet>img{
+        width: 7.5rem;
+    }
+
+    .planet{
+        margin-right: -18rem;
+        margin-top: -4rem;
+    }
+
+    .halloween>img{
+        width: 20rem;
+    }
+
+    .p1font{
+        font-family: halloween;
+        text-align: center;
+        font-size: 0.7rem;
+    }
+
+    .rock>img{
+        width: 18rem;
+    }
+
+    .watermelon>img{
+        margin-top: 23.2rem;
+        margin-left: 14rem;
+        width: 14rem;
+        display: none;
+    }
+
+    .bat>img{
+        width: 13rem;
+        z-index: 2;
+        position: relative;
+    }
+
+    .bat{
+        margin-left: 9.5rem;
+        margin-bottom: -5rem;
+        margin-top: -11rem;
+    }
+
+    .p4-font2{
+        font-family: pool;
+        width: 18rem;
+        text-align: center;
+        border-style: solid;
+        border-color: #FF8400;
+        background-color: white;
+        font-size: 0.7rem;
+        color: #75CDC8;
+        padding: 0.3rem;
+        border-radius: 10px;
+    }
+    
+    .p4-conf{
+        font-family: pool;
+        width: 18rem;
+        text-align: center;
+        border-style: solid;
+        border-color: #FF8400;
+        background-color: rgba(255, 122, 0, 0.29);
+        font-size: 1rem;
+        color: #75CDC8;
+        padding: 0.3rem;
+        border-radius: 10px;
+        margin-left: -2rem;
+        height: 3.5rem;
+        margin-top: 1.3rem;
+    }
+
+    .footer>div{
+        font-size: 0.7rem;
+        background-color: rgb(255, 134, 139);
+        position: relative;
+    }
+
+    .footer-1>div, .link{
+        background-color: rgb(236, 200, 200);
+        padding: 0.1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin: 0.3rem;
+        font-size: 0.7rem;
+        border-radius: 6px;
+        width: min-content;
+        
+    }
+
+    .p1font-cont{
+        width: 22rem;
+        text-align: center;
+        font-size: 0.7rem;
+        margin-left: 0;
+    }
+
+    .casual{
+        font-family: casual;
+        width: 20rem;
+        text-align: center;
+        align-self: center;
+        font-size: 0.7rem;
+    }
+
+    .rock-font{
+        font-family: rock;
+        text-align: center;
+        font-size: 0.7rem;
+        width: 20rem;
+        line-height: 1.8rem;
+        align-self: center;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+
+    .imgrz>div>img{
+        height: 1.5rem;
+    }
+
+    /* slogan */
+    .getp{
+        position: absolute;
+        margin-top: 5rem;
+        margin-left: 24rem;
+    }
+
+    .whatp{
+        position: absolute;
+        margin-left: 27rem;
+        margin-top: 3.7rem;
+    }
+
+    .youp{
+        position: absolute;
+        margin-left: 30.6rem;
+        margin-top: 2.7rem;
+    }
+
+    .wantp{
+        position: absolute;
+        margin-left: 33.7rem;
+        margin-top: 1.7rem;
+    }
+    /* end of slogan */
+
+    .ghost>img{
+        width: 7.5rem;
+        z-index: 2;
+        position: relative;
+    }
+
+    .ghost{
+        margin-top: 29.4rem;
+        margin-left: 7.8rem;
+    }
+
+    .flamingo>img{
+        width: 23rem;
+        margin-top: 10.820rem;
+        margin-left: -25rem;
+    }
+
+    .haunted-castle{
+        display: none;
+        margin-top: 28.5rem;
+        margin-right: 42rem;
+    }
+
+    .alien{
+        margin-top: -25rem;
+        margin-right: -8rem;
+    }
+
+    .alien>img{
+        width: 8.5rem;
+        margin-bottom: -12rem;
+        z-index: 2;
+        position: relative;
+    }
+
+    .ball>img{
+        margin-top: 21rem;
+        margin-left: 11rem;
+        width: 8.5rem;
+    }
+
+    .casual>img{
+        width: 18rem;
+    }
+
+    .lamp{
+        margin-top: -22rem;
+        margin-left: -56rem;
+    }
+
+    .clothes{
+        margin-top: -18rem;
+        margin-left: -41rem;
+    }
+
+    .planet>img{
+        width: 7.5rem;
+    }
+
+    .planet{
+        margin-right: -7rem;
+        margin-top: -4rem;
+    }
+
+    .halloween>img{
+        width: 20rem;
+    }
+
+    .rock>img{
+        width: 18rem;
+    }
+
+    .watermelon>img{
+        margin-top: 23.2rem;
+        margin-left: 14rem;
+        width: 14rem;
+        display: none;
+    }
+
+    .bat>img{
+        width: 13rem;
+        z-index: 2;
+        position: relative;
+    }
+
+    .bat{
+        margin-left: 4.7rem;
+        margin-bottom: -5rem;
+        margin-top: -11rem;
+    }
+
+    .p4-font2{
+        font-family: pool;
+        width: 14rem;
+        text-align: center;
+        border-style: solid;
+        border-color: #FF8400;
+        background-color: white;
+        font-size: 0.7rem;
+        color: #75CDC8;
+        padding: 0.3rem;
+        border-radius: 10px;
+    }
+    
+    .p4-conf{
+        font-family: pool;
+        width: 14rem;
+        text-align: center;
+        border-style: solid;
+        border-color: #FF8400;
+        background-color: rgba(255, 122, 0, 0.29);
+        font-size: 1rem;
+        color: #75CDC8;
+        padding: 0.3rem;
+        border-radius: 10px;
+        margin-left: -2rem;
+        height: 4.7rem;
+        margin-top: 1.3rem;
+    }
+
+    .footer>div{
+        font-size: 0.7rem;
+        background-color: rgb(255, 134, 139);
+        position: relative;
+    }
+
+    .footer-1>div, .link{
+        background-color: rgb(236, 200, 200);
+        padding: 0.1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin: 0.3rem;
+        font-size: 0.7rem;
+        border-radius: 6px;
+        width: min-content;
+        
+    }
+
+    .p1font{
+        font-family: halloween;
+        text-align: center;
+        font-size: 0.7rem;
+    }
+
+    .p1font-cont{
+        width: 17rem;
+        text-align: center;
+        font-size: 1rem;
+        margin-left: 0;
+    }
+
+    .casual{
+        font-family: casual;
+        width: 17rem;
+        text-align: center;
+        align-self: center;
+        font-size: 0.7rem;
+    }
+
+    .rock-font{
+        font-family: rock;
+        text-align: center;
+        font-size: 0.7rem;
+        width: 17rem;
+        line-height: 1.8rem;
+        align-self: center;
+    }
+
+}

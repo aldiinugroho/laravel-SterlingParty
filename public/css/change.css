@@ -1,0 +1,44 @@
+.btn-change{
+
+
+}
+
+.btn-change{
+    text-align: center;
+    padding-top: 0.7rem;
+    padding: -0.96rem;
+}
+
+.btn-change>button{
+    border: none;
+    cursor: pointer;
+    background-color: rgba(255, 22, 22, 1);
+    font-size: 1rem;
+    font-family: roboto;
+    border-radius: 5px;
+    color: black;
+    width: 6rem;
+    height: 1.5rem;
+    outline: none;
+    font-weight: bold;
+}
+
+.home-d-a{
+    background-color: rgba(255, 167, 0, 1);
+}
+
+@media screen and (max-width: 660px) {
+    .btn-change{
+        text-align: center;
+        padding-top: 0.7rem;
+        padding-bottom: -0.96rem;
+    }
+    
+    .btn-change>button{
+        font-size: 0.8rem;
+        width: 5rem;
+        height: 1.4rem;
+    }
+
+}
+

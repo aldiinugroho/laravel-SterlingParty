@@ -1,0 +1,79 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    width: 28rem;
+}
+
+.header>div>a>p{
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+}
+
+.header>div>a>p:hover{
+    background-color: white;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+}
+
+.header-cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    margin-top: -5rem;
+    font-family: banger;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.home-c>a>p{
+    background-color: white;
+}
+
+.history-c>a>p{
+    background-color: rgba(255, 167, 0, 1);
+}
+
+.create-c>a>p{
+    background-color: rgba(255, 167, 0, 1);
+}
+
+.need-c>a>p{
+    background-color: rgba(255, 167, 0, 1);
+}
+
+@font-face {
+    font-family: banger;
+    src: url('./Assets/home/bangers.regular.ttf');
+}
+
+@media screen and (max-width: 660px) {
+    .header{
+        display: flex;
+        justify-content: space-between;
+        width: 15rem;
+    }
+
+    .header>div>a>p{
+        padding-left: 0.3rem;
+        padding-right: 0.3rem;
+        padding-top: 0.1rem;
+        padding-bottom: 0.1rem;
+        font-size: 0.7rem;
+    }
+
+    .logout-conf{
+        padding-left: 0.5rem;
+        font-size: 0.7rem;
+    }
+
+
+}

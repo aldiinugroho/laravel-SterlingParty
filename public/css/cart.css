@@ -1,0 +1,52 @@
+.item-detail-cart{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+
+}
+
+.checkout-form{
+    display: flex;
+    flex-direction: column;
+    width: 15rem;
+    justify-content: center;
+    text-align: center;
+    font-size: 0.7rem;
+    font-family: roboto;
+    background-color: rgba(150, 232, 218, 0.78);
+    padding: 2rem;
+    position: relative;
+    z-index: 10;
+}
+
+.checkout-form>div>button{
+    font-weight: bold;
+}
+
+.white-conf{
+    background-color: white;
+    padding: 1rem;
+}
+
+.checkout-order{
+    border: none;
+    background-color: rgba(255, 22, 22, 1);
+    padding: 0.3rem;
+    cursor: pointer;
+    margin-top: 2rem;
+    border-radius: 5px;
+}
+
+.x-order-close{
+    width: 1rem;
+}
+
+.x-set{
+    position: relative;
+}
+
+.x-set>div{
+    position: absolute;
+    margin-top: -1.5rem;
+    margin-left: -1.5rem;
+}

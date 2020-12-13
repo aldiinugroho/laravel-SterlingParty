@@ -1,0 +1,62 @@
+.item-sell-cont{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(150, 232, 218, 0.78);
+    /* padding: 2rem; */
+    z-index: 10;
+    position: relative;
+    font-family: roboto;
+    font-size: 0.7rem;
+    margin: 3rem;
+    justify-content: center;
+}
+
+.item-sell-cont>div{
+    padding: 1rem;
+}
+
+.amount-cont{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.amount-cont>div>input{
+    width: 1.7rem;
+    /* border: none; */
+    padding: 0rem;
+}
+
+.amount-cont>div>button{
+    background-color: rgba(0, 153, 255, 1);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0.2rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.detail-item-conf{
+    background-color: white;
+    padding-bottom: 1rem;
+    border-radius: 5px;
+    width: 9rem;
+    overflow: hidden;
+}
+
+.detail-conf-text>div{
+    padding: 0.4rem;
+}
+
+.item-foto-cont{
+    width: inherit;
+    height: 9rem;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.item-foto-cont>div>img{
+    width: 9rem;
+}

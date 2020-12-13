@@ -1,0 +1,118 @@
+.condi-conf{
+    width: 15rem;
+    font-size: 0.7rem;
+    align-self: center;
+    font-family: roboto;
+    color: rgba(255, 184, 0, 1);
+}
+
+.total-conf{
+    width: 15rem;
+    font-size: 1.5rem;
+    align-self: center;
+    padding-top: 0.5rem;
+    font-family: roboto;
+    padding-bottom: 0.2rem;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.sbmt-conf-1{
+    width: 15rem;
+    display: flex;
+    align-self: center;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1rem;
+}
+
+.btn-order-create{
+    text-align: center;
+    /* padding-top: 0.7rem; */
+    padding: -0.96rem;
+}
+
+.btn-order-create>button{
+    border: none;
+    cursor: pointer;
+    background-color:rgba(255, 172, 48, 1);
+    font-size: 1rem;
+    font-family: roboto;
+    border-radius: 5px;
+    color: black;
+    width: 6rem;
+    height: 1.5rem;
+    outline: none;
+    font-weight: bold;
+}
+
+.req-conf{
+    font-family: roboto;
+    font-size: 0.7rem;
+}
+
+.home-d>a>p{
+    background-color: rgba(255, 167, 0, 1);
+}
+
+.history-d>a>p{
+    background-color: rgba(255, 167, 0, 1);
+}
+
+.create-d>a>p{
+    background-color: white;
+}
+
+.need-d>a>p{
+    background-color: rgba(255, 167, 0, 1);
+}
+
+.guest-cont{
+    display: flex;
+    width: 12rem;
+    justify-content: space-between;
+    align-items: center;
+    align-self: center;
+}
+
+
+@font-face{
+    font-family: roboto;
+    src: url(./Assets/main/roboto.light.ttf);
+}
+
+@media screen and (max-width: 660px) {
+    .condi-conf{
+        width: 12rem;
+    }
+
+    .total-conf{
+        font-size: 1.2rem;
+        width: 12rem;
+    }
+
+    .btn-order-create{
+        text-align: center;
+        /* padding-top: 0.7rem; */
+        padding-bottom: -0.96rem;
+    }
+    
+    .btn-order-create>button{
+        font-size: 0.8rem;
+        width: 5rem;
+        height: 1.4rem;
+    }
+
+    .sbmt-conf-1{
+        width: 11rem;
+    }
+
+    .req-conf{
+        font-family: roboto;
+        font-size: 0.55rem;
+    }
+}
