@@ -17,6 +17,8 @@ class cartcontroller extends Controller
 
         if ($datatomerge == null) {
             $cart_tosee = 0;
+            $stockalt = 0;
+            $alrt = 1;
         } else {
             $datacollection = new Collection();
             foreach($datatomerge as $item){
@@ -51,9 +53,30 @@ class cartcontroller extends Controller
                     );
                 }
             }
+
+            $stockalt = [];
+            foreach ($cart_tosee as $keyVal => $dtCek) {
+                $cekstock = item::where('Item_ID','=',$dtCek['Item_ID'])
+                ->get();
+                $stockVal = $cekstock[0]['Item_Amount'];
+                $cekForstock = $stockVal - $dtCek['Item_Amount'];
+                
+                if ($cekForstock < 0) {
+                    $stockalt[$keyVal] = [
+                        'Item_Name' => $dtCek['Item_Name'],
+                        'Item_max_take' => $stockVal,
+                        'Item_taken' => $dtCek['Item_Amount']
+                    ];
+                } 
+            }
+            if (count($stockalt) > 0) {
+                $alrt = 0;
+            } else {
+                $alrt = 1;
+            }
         }
 
-        return view('cart',['cart_tosee'=>$cart_tosee]);
+        return view('cart',['cart_tosee'=>$cart_tosee,'stockalt'=>$stockalt,'alrt'=>$alrt]);
     }
 
     public function countcart(Request $req, $item_id)
@@ -152,7 +175,7 @@ class cartcontroller extends Controller
             $tempStock = 0;
             $getForstock = item::where('Item_ID','=',$count['Item_ID'])
             ->get();
-            $stockbefore = $getForstock[0]->Item_Stock;
+            $stockbefore = $getForstock[0]['Item_Amount'];
             $tempStock = $stockbefore - $count['Item_Amount'];
             item::where('Item_ID','=',$count['Item_ID'])
             ->update(array('Item_Amount'=>$tempStock));

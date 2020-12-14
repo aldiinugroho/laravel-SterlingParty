@@ -77,10 +77,20 @@
                                     <div><h2>Total price : {{$total}}</h2></div>
                                 </div>
 
+                                @if ($alrt == 0)
+                                    @foreach ($stockalt as $item => $shwAlrt)
+                                            <div class="alert_item_cont_conf">
+                                                <div>*{{$shwAlrt['Item_Name']}} cannot be purchased because you take {{$shwAlrt['Item_taken']}} out of {{$shwAlrt['Item_max_take']}} items</div>
+                                            </div>
+                                    @endforeach
+                                @else
                                 <div><button class="checkout-order">Checkout</button></div>
-
+                                @endif
+                                {{-- <div><button class="checkout-order">Checkout</button></div> --}}
                             </form>
+                            
                         </div>
+                        
                     @else
                         <div class="emptypad-set">
                             <div><h2 class="emptycartsign">Your cart is empty..</h2></div>

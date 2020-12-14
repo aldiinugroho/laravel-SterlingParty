@@ -5,6 +5,11 @@
 
 }
 
+.alert_item_cont_conf{
+    z-index: 10;
+    position: relative;
+}
+
 .emptycartsign{
     background-color: orange;
     padding: 1.5rem;
