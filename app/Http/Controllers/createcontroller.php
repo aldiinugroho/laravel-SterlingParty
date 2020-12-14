@@ -36,28 +36,12 @@ class createcontroller extends Controller
             'acc'=>'required'
         ]);
 
-        // $event = [
-        //     "name" => $req->name,
-        //     "contact" => $req->contact,
-        //     "address" => $req->address,
-        //     "date" => $req->date,
-        //     "theme" => $req->theme,
-        //     "additional" => $req->additional,
-        //     "numberguest" => $req->numberguest,
-        //     "paymentype" => $req->paymentype,
-        //     "total_amount" => $req->total_amount,
-        //     "acc" => $req->acc
-        // ];
-
-        // dd($event);
-
         $clientdata = Session::get('clientdata');
 
-        // input data ke db
         $event = new event;
         $event->User_ID = $clientdata[0]['User_ID'];
-        $event->Theme_ID = 1;//$req->theme;
-        $event->PaymentType_ID = 1;//$req->paymentype;
+        $event->Theme_ID = $req->theme;
+        $event->PaymentType_ID = $req->paymentype;
         $event->Event_Name = $req->name;
         $event->Event_Contact = $req->contact;
         $event->Event_Address = $req->address;

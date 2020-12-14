@@ -40,46 +40,54 @@
 
                     <!-- here -->
 
-                    <div>
-                        {{-- ubah form jadi link biasa --}}
-                        <form class="checkout-form" action="" method="post">
-                            <div class="x-set">
-                                <div><a href="/need"><img class="x-order-close" src="./Assets/main/x.png" alt="x"></a></div>
-                            </div>
-                            <div class="white-conf">
-                                <div class="item-detail-cart">
-                                    <div>Item name</div>
-                                    <div>Qty</div>
-                                    <div>Price</div>
-                                    <div>Subtotal</div>
-                                    <div>      </div>
+                    @if ($cart_tosee != 0)
+                        <div>
+                            {{-- ubah form jadi link biasa --}}
+                            <form class="checkout-form" action="/checkout" method="get">
+                                <div class="x-set">
+                                    <div><a href="/need"><img class="x-order-close" src="./Assets/main/x.png" alt="x"></a></div>
                                 </div>
-                                <div class="tohideval">
-                                    {{$total = 0}}
-                                </div>
-                                @foreach ($cart_tosee as $item => $i)
-                                    <div class="tohideval">
-                                        {{$subtotal = 0}}
-                                    </div>
+                                <div class="white-conf">
                                     <div class="item-detail-cart">
-                                        <div>{{$i['Item_Name']}}</div>
-                                        <div>{{$i['Item_Amount']}}</div>
-                                        <div>{{$i['Item_Price']}}</div>
-                                        <div>{{$subtotal = $i['Item_Price'] * $i['Item_Amount']}}</div>
-                                        <div class="deltbtnred"><a href=""><p>delete</p></a></div>
+                                        <div>Item name</div>
+                                        <div>Qty</div>
+                                        <div>Price</div>
+                                        <div>Subtotal</div>
+                                        <div>      </div>
                                     </div>
                                     <div class="tohideval">
-                                        {{$total += $subtotal}}
+                                        {{$total = 0}}
                                     </div>
-                                @endforeach
-                                
-                                <div><h2>Total price : {{$total}}</h2></div>
-                            </div>
+                                    @foreach ($cart_tosee as $item => $i)
+                                        <div class="tohideval">
+                                            {{$subtotal = 0}}
+                                        </div>
+                                        <div class="item-detail-cart">
+                                            <div>{{$i['Item_Name']}}</div>
+                                            <div>{{$i['Item_Amount']}}</div>
+                                            <div>{{$i['Item_Price']}}</div>
+                                            <div>{{$subtotal = $i['Item_Price'] * $i['Item_Amount']}}</div>
+                                            <div class="deltbtnred"><a href="/delete/{{$i['Item_ID']}}"><p>delete</p></a></div>
+                                        </div>
+                                        <div class="tohideval">
+                                            {{$total += $subtotal}}
+                                        </div>
+                                    @endforeach
+                                    
+                                    <div><h2>Total price : {{$total}}</h2></div>
+                                </div>
 
-                            <div><button class="checkout-order">Checkout</button></div>
+                                <div><button class="checkout-order">Checkout</button></div>
 
-                        </form>
-                    </div>
+                            </form>
+                        </div>
+                    @else
+                        <div class="emptypad-set">
+                            <div><h2 class="emptycartsign">Your cart is empty..</h2></div>
+                            <div><a class="red_text" href="/need">Click here to back.</a></div>
+                        </div>
+                    @endif
+                    
 
 
 
