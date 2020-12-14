@@ -120,21 +120,42 @@
 
                             <!-- item history -->
 
+                            @if ($grouped->isEmpty())
+                                {{-- nothing to show --}}
+                            @else
                             <div class="event-scroll">
+                                @foreach ($grouped as $item)
+                                <div class="tohideval">
+                                    {{ $total = 0 }}
+                                </div>
                                 <div>
                                     <div class="event-history-conf"><p>Item History</p></div>
+                                    
                                     <div class="history-event-cont">
-                                    <div class="ticket-conf"><p>Order #20200001</p></div>
-                                        <div>
-                                            <p>Party popper, 3 item, (Hollywood, Los Angeles, CA, USA).
-                                            </p>
+                                        @foreach ($item as $s)
+                                        <div class="tohideval">
+                                            {{ $subtotal = 0 }}
                                         </div>
-                                        <div class="ticket-price-conf"><p>Rp 45.000</p></div>
+                                            {{-- <div class="ticket-conf"><p>Order #20200001</p></div> --}}
+                                        <div>
+                                            <p>{{$s->Item_Name}}, {{$s->Itemtransactiondetail_Amount}} item. Rp {{$s->Item_Price}}</p>
+                                        </div>
+                                        <div>Subtotal Rp {{$subtotal += $s->Item_Price * $s->Itemtransactiondetail_Amount}}</div>
+                                        <div class="tohideval">
+                                            {{$total += $subtotal}}
+                                        </div>
+                                        {{-- <div class="ticket-price-conf"><p>Rp 45.000</p></div> --}}
+                                        @endforeach
+                                    </div>
+                                    <div class="totalprc">
+                                        Total Rp {{$total}}
                                     </div>
                                 </div>
                                 
-
+                                @endforeach
+                                
                             </div>
+                            @endif
                             
                         </div>
                     </div>

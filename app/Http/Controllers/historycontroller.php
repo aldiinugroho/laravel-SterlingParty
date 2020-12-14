@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Session;
 use App\event;
+use App\item;
 
 class historycontroller extends Controller
 {
@@ -20,7 +21,15 @@ class historycontroller extends Controller
         ->where('User_ID','=',$clientdata[0]['User_ID'])
         ->get();
 
-        return view('history',['clientdata'=>$clientdata,'errormsg'=>$errormsg,'historyevent'=>$historyevent]);
+        $historyitem = item::select('*')
+        ->join('itemtransactiondetail','itemtransactiondetail.Item_ID','=','item.Item_ID')
+        ->join('itemtransaction','itemtransaction.Itemtransaction_ID','=','itemtransactiondetail.Itemtransaction_ID')
+        ->where('itemtransaction.User_ID','=',$clientdata[0]['User_ID'])
+        ->get();
+
+        $grouped = $historyitem->groupBy('Itemtransaction_ID');
+
+        return view('history',['clientdata'=>$clientdata,'errormsg'=>$errormsg,'historyevent'=>$historyevent,'grouped'=>$grouped]);
     }
 
     public function changeCheck(Request $req)
@@ -40,6 +49,7 @@ class historycontroller extends Controller
             Session::put('zeromsg',$zeromsg);
             return redirect('history');
         } else {
+            Session::put('deleteTicket',$req->ticket);
             Session::forget('zeromsg');
             return redirect('change');
         }

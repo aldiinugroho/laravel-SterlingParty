@@ -48,11 +48,9 @@
                             <div class="order-s">
                                 <select class="opt-font" name="theme" id="theme">
                                     <option selected value="null">Event theme</option>
-                                    <option value="Casual">Casual</option>
-                                    <option value="Halloween">Halloween</option>
-                                    <option value="Pool">Pool</option>
-                                    <option value="Rock">Rock</option>
-                                    <option value="Other">Other</option>
+                                    @foreach ($themedata as $item)
+                                        <option value={{$item->Theme_ID}}>{{$item->Theme_Name}}</option>
+                                    @endforeach
                                 </select>
                             </div>
                             <div><input type="text" name="additional" placeholder="Additional themes" id="additional"></div>

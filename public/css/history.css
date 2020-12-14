@@ -8,6 +8,13 @@
     border-radius: 5px;
 }
 
+.totalprc{
+    text-align: center;
+    margin-top: 1rem;
+    background-color: white;
+    border-radius: 5px;
+}
+
 .history-event-cont>div{
     width: 10rem;
 }
