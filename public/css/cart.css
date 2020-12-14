@@ -1,14 +1,23 @@
 .item-detail-cart{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 5rem;
+    margin-bottom: 1rem;
 
+}
+
+.item-detail-cart>div{
+    width: 4rem;
+}
+
+.deltbtnred>a>p{
+    border-radius: 5px;
+    background-color: red;
 }
 
 .checkout-form{
     display: flex;
     flex-direction: column;
-    width: 15rem;
+    width: 20rem;
     justify-content: center;
     text-align: center;
     font-size: 0.7rem;
@@ -26,6 +35,8 @@
 .white-conf{
     background-color: white;
     padding: 1rem;
+    position: relative;
+    z-index: 10;
 }
 
 .checkout-order{

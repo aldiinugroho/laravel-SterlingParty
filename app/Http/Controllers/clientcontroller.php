@@ -18,6 +18,7 @@ class clientcontroller extends Controller
     {
         Session::forget('clientdata');
         Session::forget('zeromsg');
+        Session::forget('cartchange');
         Session::flush();
 
         return redirect('/');

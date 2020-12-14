@@ -43,18 +43,37 @@
                     <div>
                         {{-- ubah form jadi link biasa --}}
                         <form class="checkout-form" action="" method="post">
-                            
                             <div class="x-set">
                                 <div><a href="/need"><img class="x-order-close" src="./Assets/main/x.png" alt="x"></a></div>
                             </div>
                             <div class="white-conf">
                                 <div class="item-detail-cart">
                                     <div>Item name</div>
-                                    <div>Quantity</div>
+                                    <div>Qty</div>
                                     <div>Price</div>
                                     <div>Subtotal</div>
+                                    <div>      </div>
                                 </div>
-                                <div><h2>Total price : -</h2></div>
+                                <div class="tohideval">
+                                    {{$total = 0}}
+                                </div>
+                                @foreach ($cart_tosee as $item => $i)
+                                    <div class="tohideval">
+                                        {{$subtotal = 0}}
+                                    </div>
+                                    <div class="item-detail-cart">
+                                        <div>{{$i['Item_Name']}}</div>
+                                        <div>{{$i['Item_Amount']}}</div>
+                                        <div>{{$i['Item_Price']}}</div>
+                                        <div>{{$subtotal = $i['Item_Price'] * $i['Item_Amount']}}</div>
+                                        <div class="deltbtnred"><a href=""><p>delete</p></a></div>
+                                    </div>
+                                    <div class="tohideval">
+                                        {{$total += $subtotal}}
+                                    </div>
+                                @endforeach
+                                
+                                <div><h2>Total price : {{$total}}</h2></div>
                             </div>
 
                             <div><button class="checkout-order">Checkout</button></div>
