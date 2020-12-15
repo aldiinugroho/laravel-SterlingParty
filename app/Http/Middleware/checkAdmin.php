@@ -5,7 +5,7 @@ namespace App\Http\Middleware;
 use Closure;
 use Session;
 
-class checkClient
+class checkAdmin
 {
     /**
      * Handle an incoming request.
@@ -17,12 +17,10 @@ class checkClient
     public function handle($request, Closure $next)
     {
         $dataclient = Session::get('clientdata');
-        if ($dataclient == null) {
-            return redirect('/');
-        } elseif (str_contains($dataclient,'@admin.com')){
-            return redirect('adminindex');
-        } else {
+        if ($dataclient != null && str_contains($dataclient,'@admin.com')) {
             return $next($request);
+        } else {
+            return redirect('/');
         }
     }
 }

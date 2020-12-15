@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Middleware\checkClient;
-
+use App\Http\Middleware\checkAdmin;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -75,6 +75,12 @@ Route::post('/addtocart/{item_id}', 'cartcontroller@countcart')->middleware(chec
 */
 
 // admin index page
-Route::get('/adminindex', 'adminindexcontroller@adminindex');
+Route::get('/adminindex', 'adminindexcontroller@adminindex')->middleware(checkAdmin::class);
 
-Route::get('/adminitem', 'adminitemcontroller@adminitem');
+Route::get('/adminlogout', 'adminindexcontroller@adminlogout')->middleware(checkAdmin::class);
+
+Route::get('/adminitem', 'adminitemcontroller@adminitem')->middleware(checkAdmin::class);
+
+Route::post('/newitemdata', 'adminitemcontroller@newitemdata')->middleware(checkAdmin::class);
+
+Route::post('/changeitemdata/{item_id}', 'adminitemcontroller@changeitemdata')->middleware(checkAdmin::class);

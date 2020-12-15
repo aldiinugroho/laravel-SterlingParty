@@ -6,7 +6,7 @@
         <div class="contdrop">
             <a class="a" href="/adminindex">Home</a>
             <a class="a" href="/adminitem">Item Control</a>
-            <a class="a" href="/register">Logout</a>
+            <a class="a" href="/adminlogout">Logout</a>
         </div>
     </div>
 </div>

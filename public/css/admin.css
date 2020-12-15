@@ -38,7 +38,7 @@
     position: relative;
     font-family: roboto;
     font-size: 0.7rem;
-    margin: 3rem;
+    margin: 2rem;
     justify-content: center;
 }
 
@@ -115,4 +115,42 @@
     border-radius: 5px;
     padding: 0.5rem;
     background-color: rgba(120, 226, 207, 1);
+}
+
+.detail-item-conf-admin{
+    background-color: white;
+    padding-bottom: 1rem;
+    border-radius: 5px;
+    width: 9rem;
+    overflow: hidden;
+}
+
+.detail-conf-text-admin>div>form>div{
+    padding: 0.4rem;
+}
+
+.detail-conf-text-admin>div>form>div>input{
+    width: 6rem;
+    word-wrap: break-word;
+}
+
+.tocenterform{
+    text-align: center;
+}
+
+.alrtchange_itmadmn{
+    text-align: center;
+    margin-top: 2rem;
+    background-color: rgb(255, 189, 67);
+    font-weight: bold;
+    width: 20rem;
+}
+
+.alrtchange_itmadmn>div{
+    padding: 0.5rem;
+}
+
+.cont_conf_err_change{
+    display: flex;
+    justify-content: center;
 }
