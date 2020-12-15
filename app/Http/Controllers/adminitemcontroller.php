@@ -5,12 +5,11 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\item;
 
-class needcontroller extends Controller
+class adminitemcontroller extends Controller
 {
-    public function need()
+    public function adminitem()
     {
         $item = item::paginate(4);
-        
-        return view('need',['item'=>$item]);
+        return view('adminitem',['item'=>$item]);
     }
 }

@@ -67,3 +67,14 @@ Route::get('/delete/{item_id}', 'cartcontroller@delete')->middleware(checkClient
 Route::get('/checkout', 'cartcontroller@checkout')->middleware(checkClient::class);
 
 Route::post('/addtocart/{item_id}', 'cartcontroller@countcart')->middleware(checkClient::class);
+
+
+/*
+------------- ADMIN  -------------
+------------- ROUTES -------------
+*/
+
+// admin index page
+Route::get('/adminindex', 'adminindexcontroller@adminindex');
+
+Route::get('/adminitem', 'adminitemcontroller@adminitem');

@@ -35,7 +35,7 @@ class changecontroller extends Controller
         $olddata = event::select('*')
         ->where('Event_ID','=',$tickect_dlt)
         ->get();
-        // dd($olddata[0]['Theme_ID']);
+        
         $eventchangedetail = new eventchangedetail;
         $eventchangedetail->Eventchange_ID = $latestchangeid[0]['Eventchange_ID'];
         $eventchangedetail->Event_ID = $tickect_dlt;

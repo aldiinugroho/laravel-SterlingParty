@@ -1,0 +1,118 @@
+.cont_event_data{
+    background-color: rgb(255, 252, 208);
+    width: 20rem;
+    padding: 0.8rem;
+    border-radius: 5px;
+    font-family: roboto;
+}
+
+.detail_set_conf{
+    display: flex;
+}
+
+.detail_set_conf_title{
+    width: 6rem;
+}
+
+.forbody{
+    background-color: #D2F4F6;
+    font-family: roboto;
+}
+
+.evnt_ttl{
+    text-align: center;
+    margin-top: 2rem;
+    font-family: roboto;
+}
+
+.cent_data{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.item-sell-cont-admin{
+    display: flex;
+    flex-wrap: wrap;
+    /* padding: 2rem; */
+    position: relative;
+    font-family: roboto;
+    font-size: 0.7rem;
+    margin: 3rem;
+    justify-content: center;
+}
+
+.item-sell-cont-admin>div{
+    padding: 1rem;
+}
+
+.amount-cont-admin{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.amount-cont-admin>div>input{
+    width: 4rem;
+    /* border: none; */
+    padding: 0rem;
+}
+
+.amount-cont-admin>div>p{
+    margin-right: 0.2rem;
+}
+
+.amount-cont-admin>div>button{
+    margin-top: 1rem;
+    background-color: rgba(0, 153, 255, 1);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 0.2rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.set_add_itm{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.set_add_itm>div>input{
+    border: none;
+    padding: 0.5rem;
+    margin: 1rem;
+    padding-left: 1rem;
+    border-radius: 5px;
+}
+
+.form_sett_admin{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.btn_admn_sett>button{
+    border: none;
+    background-color: rgba(0, 153, 255, 1);
+    margin: 1rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.inp_fl_set>input{
+    width: 15rem;
+}
+
+.bg_cnt_inp{
+    width: 20rem;
+    border-radius: 5px;
+    padding: 0.5rem;
+    background-color: rgba(120, 226, 207, 1);
+}

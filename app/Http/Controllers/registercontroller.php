@@ -14,7 +14,6 @@ class registercontroller extends Controller
 
     public function registerData(Request $req)
     {
-        // validation
         $req->validate([
             'name'=>'required',
             'email'=>'required|unique:user,User_Email',
@@ -24,7 +23,6 @@ class registercontroller extends Controller
             
         ]);
 
-        // input data ke db
         $user = new user;
         $user->User_Name = $req->name;
         $user->User_Email = $req->email;
