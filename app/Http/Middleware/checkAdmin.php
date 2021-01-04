@@ -19,6 +19,8 @@ class checkAdmin
         $dataclient = Session::get('clientdata');
         if ($dataclient != null && str_contains($dataclient,'@admin.com')) {
             return $next($request);
+        } elseif ($dataclient != null && !str_contains($dataclient,'@admin.com')) {
+            return redirect('/index');
         } else {
             return redirect('/');
         }

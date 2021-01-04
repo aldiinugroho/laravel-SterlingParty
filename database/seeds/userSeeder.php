@@ -25,5 +25,12 @@ class userSeeder extends Seeder
             'User_Password' => 'asdasd',
             'User_Term' => 'on'
         ]);
+
+        DB::table('user')->insert([
+            'User_Name' => 'admin',
+            'User_Email' => 'admin@admin.com',
+            'User_Password' => 'asdasd',
+            'User_Term' => 'on'
+        ]);
     }
 }
